@@ -1,5 +1,5 @@
 const express = require('express');
-const cors = require('cors'); // Add this line
+const cors = require('cors'); 
 const dotenv = require('dotenv');
 const quizRoutes = require('./routes/quizRoutes');
 const authRoutes = require('./routes/authRoutes');
@@ -7,7 +7,7 @@ const authRoutes = require('./routes/authRoutes');
 dotenv.config();
 
 const app = express();
-app.use(cors()); // Add this line
+app.use(cors()); 
 app.use(express.json());
 
 // Routes
