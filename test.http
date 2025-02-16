@@ -1,0 +1,36 @@
+### 1. Login
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "teacher",
+  "password": "password123"
+}
+
+### 2. Create a Quiz
+POST http://localhost:3000/api/quizzes
+Content-Type: application/json
+
+{
+  "title": "Math Quiz",
+  "description": "A simple math test",
+  "teacher_id": 1
+}
+
+### 3. Get All Quizzes
+GET http://localhost:3000/api/quizzes
+
+### 4. Get a Specific Quiz
+GET http://localhost:3000/api/quizzes/1
+
+### 5. Update a Quiz
+PUT http://localhost:3000/api/quizzes/1
+Content-Type: application/json
+
+{
+  "title": "Updated Quiz",
+  "description": "Updated description"
+}
+
+### 6. Delete a Quiz
+DELETE http://localhost:3000/api/quizzes/11
